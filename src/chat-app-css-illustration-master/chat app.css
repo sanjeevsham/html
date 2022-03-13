@@ -2,10 +2,14 @@
   padding: 0;
   margin: 0;
 }
+.availability {
+  font-size: 8px;
+  color: lightgray;
+}
 
 body {
   background-color: hsl(270, 20%, 96%);
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 16px;
   display: flex;
   flex-direction: column;
@@ -14,6 +18,38 @@ body {
   height: 100vh;
 }
 
+.description-head,
+.description-text {
+  text-align: center;
+}
+
+.description-head {
+  color: hsl(271, 36%, 24%);
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.description-text {
+  color: hsl(270, 7%, 64%);
+  font-size: 14px;
+  width: 70%;
+  margin: auto;
+  font-weight: normal;
+}
+.greybody {
+  background-color: hsl(0, 14%, 91%);
+  width: 50%;
+  height: 400px;
+  align-self: flex-start;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 1000px 0px 0px 0px;
+}
+.name {
+  font-size: 12px;
+}
 .phone {
   display: flex;
   flex-direction: column;
@@ -61,10 +97,6 @@ body {
   justify-content: space-around;
 }
 
-.uil-ellipsis-v {
-  margin-right: 15px;
-}
-
 .phone-header-description .uil-angle-left {
   font-size: 20px;
 }
@@ -73,15 +105,6 @@ body {
   width: 25px;
   border: 1px solid white;
   border-radius: 50px;
-}
-
-.name {
-  font-size: 12px;
-}
-
-.availability {
-  font-size: 8px;
-  color: lightgray;
 }
 
 .phone-body {
@@ -167,6 +190,21 @@ body {
   font-size: 14px;
   font-weight: 700;
 }
+.purpleBody {
+  background-image: linear-gradient(
+    to top left,
+    hsl(264, 100%, 61%),
+    hsl(293, 100%, 63%)
+  );
+  width: 50%;
+  height: 400px;
+  align-self: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 0 0 1000px 0px;
+}
 
 .type-message {
   margin: auto;
@@ -202,53 +240,9 @@ body {
   color: white;
 }
 
-.description-head,
-.description-text {
-  text-align: center;
+.uil-ellipsis-v {
+  margin-right: 15px;
 }
-
-.description-head {
-  color: hsl(271, 36%, 24%);
-  margin-bottom: 20px;
-  font-weight: 500;
-}
-
-.description-text {
-  color: hsl(270, 7%, 64%);
-  font-size: 14px;
-  width: 70%;
-  margin: auto;
-  font-weight: normal;
-}
-
-.purpleBody {
-  background-image: linear-gradient(
-    to top left,
-    hsl(264, 100%, 61%),
-    hsl(293, 100%, 63%)
-  );
-  width: 50%;
-  height: 400px;
-  align-self: flex-start;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  border-radius: 0 0 1000px 0px;
-}
-
-.greybody {
-  background-color: hsl(0, 14%, 91%);
-  width: 50%;
-  height: 400px;
-  align-self: flex-start;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  border-radius: 1000px 0px 0px 0px;
-}
-
 @media only screen and (min-width: 1000px) {
   body {
     flex-direction: row;
@@ -266,15 +260,14 @@ body {
     width: 400px;
     text-align: left;
   }
+  .greybody {
+    width: 25%;
+    height: 550px;
+  }
 
   .purpleBody {
     width: 25%;
     border-radius: 0 0 1000px 1000px;
-    height: 550px;
-  }
-
-  .greybody {
-    width: 25%;
     height: 550px;
   }
 }
