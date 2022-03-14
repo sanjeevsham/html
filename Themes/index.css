@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.last-cell {
+  border-right: none;
+}
+.main {
+  text-align: center;
+}
+.table-box {
+  margin: 50px auto;
+}
+.table-row {
+  background: transparent;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 5, 0.3);
+  color: #555;
+  display: table;
+  font-size: 13px;
+  font-family: sans-serif;
+  margin: 10px auto;
+  padding: 12px 0;
+  width: 80%;
+}
+.table-cell {
+  border-right: 1px solid black;
+  display: table-cell;
+  padding: 4px 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 30%;
+}
+.table-head {
+  background: blue;
+  box-shadow: none;
+  color: #fff;
+  font-weight: 600;
+}
+.table-head .table-cell {
+  border-right: none;
+}
