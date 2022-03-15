@@ -1,84 +1,41 @@
-.banner {
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url(../../images/backgroundpage.jpg);
-  background-size: cover;
-  background-position: center;
+* {
+  margin: 0;
+  padding: 0;
 }
-.navbar {
-  width: 85%;
-  margin: auto;
-  padding: 35px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.last-cell {
+  border-right: none;
 }
-.logo {
-  width: 120px;
-  cursor: pointer;
-  border-radius: 25px;
-}
-.navbar ul li {
-  list-style: none;
-  display: inline-block;
-  margin: 0 20px;
-  position: relative;
-}
-.navbar ul li a {
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-}
-.navbar ul li::after {
-  content: '';
-  height: 3px;
-  width: 0;
-  background: lightseagreen;
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  transition: 0.5s;
-}
-.navbar ul li:hover::after {
-  width: 100%;
-}
-.head {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+.main {
   text-align: center;
-  color: white;
 }
-button {
-  width: 200px;
-  padding: 15px 0;
-  text-align: center;
-  margin: 20px 10px;
-  border-radius: 25px;
-  font-weight: bold;
-  border: 2px solid lightseagreen;
+.table-box {
+  margin: 50px auto;
+}
+.table-row {
   background: transparent;
-  color: white;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 5, 0.3);
+  color: #555;
+  display: table;
+  font-size: 13px;
+  font-family: sans-serif;
+  margin: 10px auto;
+  padding: 12px 0;
+  width: 80%;
 }
-span {
-  background: lightseagreen;
-  height: 100%;
-  width: 0;
-  border-radius: 25px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-  transition: 0.5s;
+.table-cell {
+  border-right: 1px solid black;
+  display: table-cell;
+  padding: 4px 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 30%;
 }
-button:hover span {
-  width: 100%;
+.table-head {
+  background: blue;
+  box-shadow: none;
+  color: #fff;
+  font-weight: 600;
 }
-button:hover {
-  border: none;
+.table-head .table-cell {
+  border-right: none;
 }
