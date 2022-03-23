@@ -2,11 +2,19 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-image: url('https://www.itl.cat/pngfile/big/210-2101051_dark-web-scanning-background-image-for-website-of.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .last-cell {
   border-right: none;
 }
 .main {
   text-align: center;
+  color: white;
+  margin-top: 10px;
 }
 .table-box {
   margin: 50px auto;
@@ -31,11 +39,17 @@
   width: 30%;
 }
 .table-head {
-  background: blue;
+  background: rgb(27, 27, 116);
   box-shadow: none;
   color: #fff;
   font-weight: 600;
 }
 .table-head .table-cell {
   border-right: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+  font-weight: bolder;
 }
