@@ -1,49 +1,47 @@
 .box {
-
-    width: 200px;
-    height: 200px;
-    background-color: olivedrab;
-    position: relative;
-    animation-name:anim 2;
-    animation-duration: 4s;
-    
-    }
-    @keyframes anim {
-    0%{
-    left:0;
-    top:0;
-    background-color: aqua;
-    }
-    100%{
-    left:500px;
-    top:0;
-    background-color:green;
-    }
+  animation-duration: 4s;
+  animation-name: anim2;
+  background-color: olivedrab;
+  height: 200px;
+  position: relative;
+  width: 200px;
 }
-   @keyframes anim2 {
-   0%{
-    left:0;
-    top:0;
+@keyframes anim {
+  0% {
     background-color: aqua;
-    }
-    25%{
-    left:500px;
-    top:0;
+    left: 0;
+    top: 0;
+  }
+  100% {
     background-color: green;
-    }
-    50%{
-    left:500px;
+    left: 500px;
+    top: 0;
+  }
+}
+@keyframes anim2 {
+  0% {
+    background-color: aqua;
+    left: 0;
+    top: 0;
+  }
+  25% {
+    background-color: green;
+    left: 500px;
+    top: 0;
+  }
+  50% {
+    background-color: greenyellow;
+    left: 500px;
     top: 500px;
-    background-color:greenyellow;
-    } 
-    75%{
-        left:0px;
-        top: 500px;
-        background-color:blue;
-        } 
-        100%{
-            left:0px;
-            top: 0px;
-            background-color:aqua;
-            }
-        }
+  }
+  75% {
+    background-color: blue;
+    left: 0px;
+    top: 500px;
+  }
+  100% {
+    background-color: aqua;
+    left: 0px;
+    top: 0px;
+  }
+}
