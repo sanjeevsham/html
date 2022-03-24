@@ -1,6 +1,6 @@
 .banner {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url('../images/backgroundpage.jpg');
+    url('https://images.unsplash.com/photo-1612383401597-cdfb8bdfa0d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZGFyayUyMGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
   background-size: cover;
   background-position: center;
   height: 100vh;
