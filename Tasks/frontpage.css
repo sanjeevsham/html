@@ -1,26 +1,50 @@
-body {
-  background: lightgray;
-}
 .main-container {
   display: grid;
   grid-template-columns: 0.5fr 2fr 2fr 3fr;
-  margin: 50px 30px 50px 33px;
   background: white;
   height: 100%;
+  border: 1px solid lavender;
+  border-radius: 5px;
 }
 .container1 {
-  width: 81px;
+  width: 86px;
   border-right: 1px solid lightgray;
 }
 .logo {
   border-bottom: 1px solid lightgray;
 }
 .logo img {
-  padding: 20px;
-  width: 33px;
+  padding: 15px 15px 15px 18px;
+  width: 49px;
 }
 .icons {
-  padding: 40px 20px 20px 31px;
+  padding: 35px 20px 20px 28px;
+  font-size: 25px;
+  color: #7a8bf8;
+}
+.icons:hover {
+  border-right: 2px solid #3954fa;
+  color: #3954fa;
+}
+.dot1 {
+  height: 8px;
+  width: 8px;
+  background: rgb(48, 123, 236);
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  bottom: 28px;
+  left: 20px;
+}
+.dot2 {
+  height: 8px;
+  width: 8px;
+  background: rgb(255, 72, 0);
+  border-radius: 50%;
+  display: block;
+  position: relative;
+  bottom: 28px;
+  left: 20px;
 }
 .images {
   width: 30px;
@@ -28,56 +52,83 @@ body {
   height: 30px;
   padding: 25px;
 }
-#power {
-  width: 25px;
-  padding: 40px 20px 20px 30px;
+.images:hover {
+  border: none;
+  border-radius: 50px;
+  background: rgba(172, 169, 169, 0.185);
+}
+.dot4 {
+  height: 8px;
+  width: 8px;
+  background: rgb(48, 123, 236);
+  border-radius: 50%;
+  border: 2px solid white;
+  display: inline-block;
+  position: relative;
+  bottom: 62px;
+  left: 45px;
+}
+.power {
+  font-size: 30px;
+  padding: 25px 20px 20px 26px;
+}
+.power:hover {
+  border: none;
+  border-radius: 20px;
+  background: lightgray;
 }
 .container2 {
-  border-right: 1px solid lightgray;
+  border-right: 1px solid rgba(107, 106, 106, 0.945);
   width: 100%;
 }
-h2 {
+h3 {
   text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .top-heading {
   border-bottom: 1px solid lightgray;
-  padding-left: 15px;
+  padding: 10px 0px 8px 20px;
+  font-size: smaller;
 }
 .headings {
-  margin-top: 10%;
+  margin-top: 8%;
   display: flex;
-  padding-left: 16%;
+  padding-left: 14%;
 }
-#heading {
-  color: lightgray;
-  text-align: right;
+.heading1 {
+  color: rgb(161, 160, 160);
+  font-size: smaller;
+  padding-left: 45px;
 }
 .headings h3 {
-  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .liveprice {
   margin-left: 60px;
 }
-.liveprice p {
-  font-weight: bold;
-  width: 100%;
+.liveprice1 {
+  font-weight: 600;
+  font-size: x-large;
+  padding: 10px 10px 0px 10px;
 }
 .decreasing-price {
   color: red;
-  margin-top: -15px;
+  font-size: smaller;
+  padding-left: 16px;
 }
 .decreasing-price span {
-  color: lightgray;
-  text-align: left;
+  color: rgb(161, 160, 160);
+  padding-left: 10px;
 }
 .graph img {
   width: 100%;
   height: 50%;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 .heading {
   font-weight: bold;
-  padding-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 20px 0px 20px;
 }
 .menu {
   display: grid;
@@ -89,13 +140,51 @@ h2 {
   border-radius: 5px;
   padding: 10px 0px 10px 0px;
   margin: 5px;
+  font-size: 30px;
+}
+.menu1:hover {
+  border: 1px solid;
+  box-shadow: 5px 5px rgba(32, 32, 32, 0.493);
 }
 .menu1 i {
-  margin-left: 21px;
+  margin-left: 28px;
 }
 .menu1 p {
   text-align: center;
   font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.fa-hand-holding-usd {
+  color: lightgreen;
+}
+.fa-laptop,
+.fa-book {
+  color: orange;
+}
+.fa-building {
+  color: rgb(114, 114, 240);
+}
+.fa-bank {
+  color: lightseagreen;
+}
+.fa-columns {
+  color: violet;
+}
+.fa-credit-card {
+  color: lightblue;
+}
+.fa-money-bill-alt,
+.fa-money-bill {
+  color: red;
+}
+.fa-amazon-pay {
+  color: blue;
+}
+.fa-donate {
+  color: lightpink;
+}
+.fa-tags {
+  color: lightskyblue;
 }
 .container3 {
   border-right: 1px solid lightgray;
@@ -103,25 +192,39 @@ h2 {
 }
 .top-heading2 {
   border-bottom: 1px solid lightgray;
-  padding-left: 15px;
+  padding: 10px 0px 8px 20px;
+  font-size: smaller;
 }
 .wallet {
   padding: 20px;
 }
 .wallet p {
-  color: lightgray;
+  color: rgb(161, 160, 160);
 }
 .price1 {
   display: flex;
+}
+.price2 {
+  color: rgb(4, 4, 112);
+}
+.fa-wallet {
+  font-size: 30px;
+  color: blue;
 }
 .options {
   font-size: 27px;
   padding-left: 8px;
   border: none;
-  color: lightgray;
+  color: rgb(161, 160, 160);
+  background-color: rgba(255, 250, 250, 0.877);
 }
 .activity {
   padding: 20px 20px 10px 20px;
+}
+.activity h3 {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 20px 0px 0px;
 }
 .options1 {
   width: 32%;
@@ -139,19 +242,24 @@ h2 {
   border-radius: 5px;
   background: white;
 }
+.card:hover {
+  border: 1px solid;
+  box-shadow: 5px 5px rgba(32, 32, 32, 0.493);
+}
 .col1 {
-  display: flex;
+  display: grid;
+  grid-template-columns: 66% 25%;
   padding: 2px;
   height: 45px;
 }
 .logo-img {
   display: grid;
   grid-template-columns: 50px 80px;
-  padding: 20px;
+  padding: 15px;
 }
 .col2 {
   display: grid;
-  grid-template-columns: 165px 20px;
+  grid-template-columns: 185px 70px;
   padding: 20px;
 }
 .fa-clock,
@@ -161,63 +269,129 @@ h2 {
 .button {
   width: 40%;
   height: 30px;
-  border: 1px solid lightgray;
+  border: 1px solid black;
   border-radius: 10px;
   padding-right: 50px;
   background: black;
   color: white;
 }
-.button1 {
-  width: 40%;
-  height: 30px;
-  border: 1px solid lightgray;
-  border-radius: 10px;
-  padding-right: 50px;
+.button:hover {
   background: white;
+  color: black;
 }
 .btc {
+  color: rgb(161, 160, 160);
+}
+.fa-clock {
   color: lightgray;
+  padding: 0px 10px 10px 3px;
+}
+.fa-star {
+  color: lightgray;
+  padding: 0px 7px 0px 1px;
 }
 .history {
   padding: 0px 20px 20px 20px;
 }
-#card {
+.his-card {
   border: 1px solid lightgray;
   padding: 0px 10px 10px 10px;
   border-radius: 5px;
   background: white;
 }
+.his-card:hover {
+  border: 1px solid;
+  box-shadow: 5px 5px rgba(32, 32, 32, 0.493);
+}
 .history1 {
   display: grid;
-  grid-template-columns: 150px 116px;
+  grid-template-columns: 91% 9%;
 }
-#button {
-  padding-left: 100px;
+.history-col {
+  padding: 20px 10px 10px 10px;
+}
+.button-col {
   border: none;
   background: transparent;
+  color: rgb(88, 85, 85);
+  font-size: x-large;
+}
+.button-col:hover {
+  border: none;
+  background: lightgray;
+  border-radius: 5px;
+}
+.btc1 {
+  color: rgb(105, 103, 103);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.doller {
+  color: rgb(161, 160, 160);
+  font-size: large;
 }
 .graph2 img {
   width: 100%;
-  height: 20px;
+  height: 30px;
 }
-#container4 {
+.container5 {
   padding: 20px 0px;
 }
 .nav {
   display: grid;
-  grid-template-columns: 50px 60px 260px 95px 46px;
+  grid-template-columns: 50px 50px 260px 95px 46px;
   border-bottom: 1px solid lightgray;
   padding: 14px 20px 13px 20px;
   align-items: center;
 }
-.nav img {
-  width: 50px;
-  height: 40px;
+.fa-gear {
+  font-size: 20px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0px 10px 0px 0px;
+  background: rgb(241, 238, 240);
+  color: rgb(161, 160, 160);
+}
+.fa-gear:hover,
+.fa-bell:hover {
+  box-shadow: 2px 2px lightgray;
+}
+.fa-bell {
+  font-size: 20px;
+  border: none;
+  padding: 10px 10px 0px 10px;
+  border-radius: 5px;
+  margin: 0px 10px 0px 0px;
+  background: rgb(241, 238, 240);
+  color: rgb(161, 160, 160);
+}
+.dot3 {
+  height: 7px;
+  width: 7px;
+  background: rgb(255 134 0);
+  border-radius: 50%;
+  border: 1px solid rgba(80, 78, 78, 0.884);
+  display: block;
+  position: relative;
+  bottom: 22px;
+  left: 10px;
 }
 .profile img {
   width: 30px;
   border-radius: 50%;
   height: 30px;
+}
+.profile img:hover {
+  border: 2px solid rgb(30, 31, 31);
+}
+.search-container i {
+  padding: 10px 5px 10px 30px;
+  font-size: 20px;
+  color: lightgray;
+}
+.search-container i:hover {
+  background: rgb(241, 241, 241);
 }
 .search-container input {
   border: none;
@@ -225,32 +399,70 @@ h2 {
 }
 .col3 {
   display: grid;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 60% 40%;
   padding: 20px;
 }
-#image span {
-  padding-left: 10px;
+.image-bit {
+  display: flex;
 }
-#image img {
-  width: 25px;
-  height: 25px;
+.image-bit img {
+  width: 30px;
+  height: 30px;
+  padding-right: 10px;
+  padding-left: 7px;
+}
+.bitcoin {
+  padding-top: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+.bitcoin span {
+  padding-top: 8px;
+  padding-left: 8px;
+  color: rgb(161, 160, 160);
+}
+.doller2 {
+  font-size: x-large;
+  font-weight: 600;
+  padding: 5px;
+}
+.doller2 span {
+  font-size: small;
+  padding-left: 10px;
+  color: lightgreen;
+}
+.currency {
+  padding-top: 8px;
 }
 .currency button {
-  border: 1px splid black;
   background: black;
   color: white;
   border-radius: 20px;
+  font-size: x-small;
 }
-#graph img {
+.graph3 img {
   padding: 20px;
+}
+.heading2 {
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 20px;
+  font-weight: 600;
 }
 .cards {
   display: grid;
   grid-template-columns: 35% 35% 34%;
-  padding: 20px;
+  padding: 0px 20px 20px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-small;
 }
 .number {
   font-size: larger;
+}
+.sup {
+  font-size: large;
+  font-weight: 600;
+  padding-bottom: 10px;
 }
 .card1 {
   border: none;
@@ -259,7 +471,10 @@ h2 {
   background: #4053f8;
   justify-content: center;
   color: white;
-  font-size: small;
+}
+.card1:hover {
+  border: 1px solid;
+  box-shadow: 5px 5px #4053f8;
 }
 .card2 {
   border: none;
@@ -267,7 +482,10 @@ h2 {
   margin: 5px;
   background: #f5f4f9;
   justify-content: center;
-  font-size: small;
+}
+.card2:hover {
+  border: 1px solid;
+  box-shadow: 5px 5px rgb(161, 160, 160);
 }
 .card1 img {
   width: 86%;
@@ -282,14 +500,17 @@ h2 {
   padding: 10px;
 }
 .button2 {
-  margin: 0px 20px 0px 10px;
+  margin: 0px 20px 15px 10px;
   background: orange;
   border: none;
   border-radius: 20px;
   width: 15px;
   height: 10px;
 }
-
+.btn-spn {
+  font-size: small;
+  font-family: Arial, Helvetica, sans-serif;
+}
 .button3 {
   margin: 0px 20px 0px 10px;
   background: skyblue;
@@ -306,9 +527,15 @@ h2 {
   border: none;
   border-radius: 5px;
   display: flex;
-  margin: 10px 10px 15px 5px;
-  font-size: small;
+  margin: 7px 16px 15px 5px;
   background: #f5f4f9;
+}
+.inside-card1:hover {
+  border: 1px solid;
+  box-shadow: 5px 5px rgb(161, 160, 160);
+}
+.inside-card1 p {
+  padding: 13px 20px 0px 0px;
 }
 .inside-card1 img {
   width: 35px;
@@ -317,15 +544,21 @@ h2 {
 }
 .income1 {
   color: #4053f8;
-  font-size: larger;
+  font-size: medium;
   font-weight: 600;
 }
 .inside-card2 {
   border: 1px solid #4053f8;
   border-radius: 5px;
   display: flex;
-  margin: 10px 10px 15px 5px;
-  font-size: small;
+  margin: 7px 16px 15px 5px;
+}
+.inside-card2:hover {
+  border: 1px solid;
+  box-shadow: 5px 5px rgb(161, 160, 160);
+}
+.inside-card2 p {
+  padding: 13px 20px 0px 0px;
 }
 .inside-card2 img {
   width: 35px;
@@ -334,17 +567,23 @@ h2 {
 }
 .income2 {
   color: red;
-  font-size: larger;
+  font-size: medium;
   font-weight: 600;
 }
 .inside-card3 {
   border: none;
   border-radius: 5px;
   display: flex;
-  margin: 10px 10px 15px 5px;
-  font-size: small;
+  margin: 7px 16px 1px 5px;
   background: #3954fa;
   color: white;
+}
+.inside-card3:hover {
+  border: 1px solid;
+  box-shadow: 5px 5px #4053f8;
+}
+.inside-card3 p {
+  padding: 13px 20px 0px 0px;
 }
 .inside-card3 img {
   width: 35px;
@@ -353,6 +592,6 @@ h2 {
 }
 .income3 {
   color: white;
-  font-size: larger;
+  font-size: medium;
   font-weight: 600;
 }
