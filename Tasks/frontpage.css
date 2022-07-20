@@ -61,8 +61,12 @@
 }
 .power {
   font-size: 30px;
-  padding: 25px 20px 20px 27px;
+  padding: 25px 20px 20px 28px;
+  color: rgba(0, 0, 0, 0.39);
   cursor: pointer;
+}
+.power:hover {
+  color: black;
 }
 .container2 {
   border-right: 1px solid rgba(107, 106, 106, 0.945);
@@ -208,6 +212,9 @@ h3 {
   background-color: rgba(255, 250, 250, 0.877);
   cursor: pointer;
   outline: none;
+}
+.dropdown {
+  font-size: 15px;
 }
 .activity {
   padding: 20px 20px 3px 20px;
@@ -457,6 +464,10 @@ h3 {
   font-size: large;
   font-weight: 600;
   padding-bottom: 10px;
+}
+.sup sup {
+  font-size: x-small;
+  padding-right: 5px;
 }
 .card1 {
   border: none;
