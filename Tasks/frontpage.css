@@ -14,68 +14,55 @@
   border-bottom: 1px solid lightgray;
 }
 .logo img {
-  padding: 15px 15px 15px 18px;
+  padding: 15px;
   width: 49px;
+  cursor: pointer;
 }
 .icons {
-  padding: 35px 20px 20px 28px;
+  width: 86px;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 25px;
   color: #7a8bf8;
+  cursor: pointer;
 }
 .icons:hover {
-  border-right: 2px solid #3954fa;
+  border-right: 3px solid #3954fa;
   color: #3954fa;
 }
-.dot1 {
-  height: 8px;
-  width: 8px;
-  background: rgb(48, 123, 236);
-  border-radius: 50%;
-  display: block;
-  position: relative;
-  bottom: 28px;
-  left: 20px;
-}
-.dot2 {
-  height: 8px;
-  width: 8px;
-  background: rgb(255, 72, 0);
-  border-radius: 50%;
-  display: block;
-  position: relative;
-  bottom: 28px;
-  left: 20px;
-}
-.images {
-  width: 30px;
-  border-radius: 50%;
-  height: 30px;
-  padding: 25px;
-}
-.images:hover {
-  border: none;
-  border-radius: 50px;
-  background: rgba(172, 169, 169, 0.185);
-}
+.dot1,
+.dot2,
 .dot4 {
   height: 8px;
   width: 8px;
   background: rgb(48, 123, 236);
   border-radius: 50%;
-  border: 2px solid white;
   display: inline-block;
   position: relative;
+  bottom: 8px;
+  right: 5px;
+}
+.dot2 {
+  background: rgb(255, 72, 0);
+}
+.image img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 27px;
+  cursor: pointer;
+}
+.dot4 {
   bottom: 62px;
   left: 45px;
+  border: 2px solid white;
 }
 .power {
   font-size: 30px;
-  padding: 25px 20px 20px 26px;
-}
-.power:hover {
-  border: none;
-  border-radius: 20px;
-  background: lightgray;
+  padding: 25px 20px 20px 27px;
+  cursor: pointer;
 }
 .container2 {
   border-right: 1px solid rgba(107, 106, 106, 0.945);
@@ -91,9 +78,7 @@ h3 {
   font-size: smaller;
 }
 .headings {
-  margin-top: 8%;
-  display: flex;
-  padding-left: 14%;
+  padding: 30px;
 }
 .heading1 {
   color: rgb(161, 160, 160);
@@ -102,9 +87,10 @@ h3 {
 }
 .headings h3 {
   font-family: Arial, Helvetica, sans-serif;
+  float: left;
 }
 .liveprice {
-  margin-left: 60px;
+  float: right;
 }
 .liveprice1 {
   font-weight: 600;
@@ -121,14 +107,15 @@ h3 {
   padding-left: 10px;
 }
 .graph img {
-  width: 100%;
+  width: 95%;
   height: 50%;
-  margin-top: 12px;
+  padding: 5px;
+  margin-top: 14px;
 }
 .heading {
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 10px 20px 0px 20px;
+  padding-left: 20px;
 }
 .menu {
   display: grid;
@@ -138,52 +125,50 @@ h3 {
 .menu1 {
   border: 1px solid lightgray;
   border-radius: 5px;
-  padding: 10px 0px 10px 0px;
+  padding: 10px;
   margin: 5px;
   font-size: 30px;
+  text-align: center;
+  cursor: pointer;
 }
 .menu1:hover {
   border: 1px solid;
   box-shadow: 5px 5px rgba(32, 32, 32, 0.493);
 }
-.menu1 i {
-  margin-left: 28px;
-}
 .menu1 p {
-  text-align: center;
   font-size: small;
   font-family: Arial, Helvetica, sans-serif;
 }
-.fa-hand-holding-usd {
+.hand {
   color: lightgreen;
 }
-.fa-laptop,
-.fa-book {
+.laptop,
+.book {
   color: orange;
 }
-.fa-building {
+.building {
   color: rgb(114, 114, 240);
 }
-.fa-bank {
+.bank {
   color: lightseagreen;
 }
-.fa-columns {
+.columns {
   color: violet;
 }
-.fa-credit-card {
+.credit {
   color: lightblue;
 }
-.fa-money-bill-alt,
-.fa-money-bill {
+.money-bill-alt,
+.money-bill {
   color: red;
 }
-.fa-amazon-pay {
+.amazon {
   color: blue;
 }
-.fa-donate {
+.donate {
   color: lightpink;
 }
-.fa-tags {
+.tags {
   color: lightskyblue;
 }
 .container3 {
@@ -206,10 +191,14 @@ h3 {
 }
 .price2 {
   color: rgb(4, 4, 112);
+  font-size: xx-large;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
 }
-.fa-wallet {
+.wallet1 em {
   font-size: 30px;
   color: blue;
+  padding: 5px;
 }
 .options {
   font-size: 27px;
@@ -217,20 +206,22 @@ h3 {
   border: none;
   color: rgb(161, 160, 160);
   background-color: rgba(255, 250, 250, 0.877);
+  cursor: pointer;
+  outline: none;
 }
 .activity {
-  padding: 20px 20px 10px 20px;
+  padding: 20px 20px 3px 20px;
 }
 .activity h3 {
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 10px 20px 0px 0px;
 }
 .options1 {
   width: 32%;
   border: 1px solid lightgray;
   border-radius: 10px;
   padding: 5px;
+  outline: none;
 }
 .options2 {
   display: flex;
@@ -241,10 +232,6 @@ h3 {
   margin-top: 20px;
   border-radius: 5px;
   background: white;
-}
-.card:hover {
-  border: 1px solid;
-  box-shadow: 5px 5px rgba(32, 32, 32, 0.493);
 }
 .col1 {
   display: grid;
@@ -262,8 +249,8 @@ h3 {
   grid-template-columns: 185px 70px;
   padding: 20px;
 }
-.fa-clock,
-.fa-star {
+.clock em,
+.star em {
   padding-right: 5px;
 }
 .button {
@@ -274,6 +261,7 @@ h3 {
   padding-right: 50px;
   background: black;
   color: white;
+  cursor: pointer;
 }
 .button:hover {
   background: white;
@@ -282,11 +270,11 @@ h3 {
 .btc {
   color: rgb(161, 160, 160);
 }
-.fa-clock {
+.clock em {
   color: lightgray;
   padding: 0px 10px 10px 3px;
 }
-.fa-star {
+.star em {
   color: lightgray;
   padding: 0px 7px 0px 1px;
 }
@@ -298,10 +286,6 @@ h3 {
   padding: 0px 10px 10px 10px;
   border-radius: 5px;
   background: white;
-}
-.his-card:hover {
-  border: 1px solid;
-  box-shadow: 5px 5px rgba(32, 32, 32, 0.493);
 }
 .history1 {
   display: grid;
@@ -341,30 +325,27 @@ h3 {
   display: grid;
   grid-template-columns: 50px 50px 260px 95px 46px;
   border-bottom: 1px solid lightgray;
-  padding: 14px 20px 13px 20px;
+  padding: 14px 20px 9px 20px;
   align-items: center;
 }
-.fa-gear {
+.gear,
+.bell1 {
   font-size: 20px;
   border: none;
-  padding: 10px;
+  padding: 9px;
   border-radius: 5px;
   margin: 0px 10px 0px 0px;
   background: rgb(241, 238, 240);
   color: rgb(161, 160, 160);
+  cursor: pointer;
+  text-align: center;
 }
-.fa-gear:hover,
-.fa-bell:hover {
+.gear:hover,
+.bell1:hover {
   box-shadow: 2px 2px lightgray;
 }
-.fa-bell {
-  font-size: 20px;
-  border: none;
+.bell1 {
   padding: 10px 10px 0px 10px;
-  border-radius: 5px;
-  margin: 0px 10px 0px 0px;
-  background: rgb(241, 238, 240);
-  color: rgb(161, 160, 160);
 }
 .dot3 {
   height: 7px;
@@ -381,21 +362,33 @@ h3 {
   width: 30px;
   border-radius: 50%;
   height: 30px;
+  cursor: pointer;
 }
 .profile img:hover {
   border: 2px solid rgb(30, 31, 31);
 }
-.search-container i {
-  padding: 10px 5px 10px 30px;
+.search-container {
+  border: 1px solid rgb(241, 238, 240);
+  padding: 10px;
+  border-radius: 20px;
+}
+.search-container em {
   font-size: 20px;
   color: lightgray;
+  cursor: pointer;
 }
 .search-container i:hover {
   background: rgb(241, 241, 241);
 }
 .search-container input {
+  outline: none;
   border: none;
+  font-size: medium;
   padding-left: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.slider {
+  text-align: center;
 }
 .col3 {
   display: grid;
@@ -425,6 +418,7 @@ h3 {
   font-size: x-large;
   font-weight: 600;
   padding: 5px;
+  font-family: monospace;
 }
 .doller2 span {
   font-size: small;
@@ -472,20 +466,12 @@ h3 {
   justify-content: center;
   color: white;
 }
-.card1:hover {
-  border: 1px solid;
-  box-shadow: 5px 5px #4053f8;
-}
 .card2 {
   border: none;
   border-radius: 5px;
   margin: 5px;
   background: #f5f4f9;
   justify-content: center;
-}
-.card2:hover {
-  border: 1px solid;
-  box-shadow: 5px 5px rgb(161, 160, 160);
 }
 .card1 img {
   width: 86%;
@@ -530,10 +516,6 @@ h3 {
   margin: 7px 16px 15px 5px;
   background: #f5f4f9;
 }
-.inside-card1:hover {
-  border: 1px solid;
-  box-shadow: 5px 5px rgb(161, 160, 160);
-}
 .inside-card1 p {
   padding: 13px 20px 0px 0px;
 }
@@ -552,10 +534,6 @@ h3 {
   border-radius: 5px;
   display: flex;
   margin: 7px 16px 15px 5px;
-}
-.inside-card2:hover {
-  border: 1px solid;
-  box-shadow: 5px 5px rgb(161, 160, 160);
 }
 .inside-card2 p {
   padding: 13px 20px 0px 0px;
@@ -577,10 +555,6 @@ h3 {
   margin: 7px 16px 1px 5px;
   background: #3954fa;
   color: white;
-}
-.inside-card3:hover {
-  border: 1px solid;
-  box-shadow: 5px 5px #4053f8;
 }
 .inside-card3 p {
   padding: 13px 20px 0px 0px;
