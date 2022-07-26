@@ -1,0 +1,57 @@
+//-----------------------------------------------mixin--------------------------------------//
+.heading {
+  font-weight: bold;
+  font-family: @font;
+  padding-left: 20px;
+}
+.gear{
+  .curser();
+  font-size: 20px;
+  border: none;
+  padding: 9px;
+  border-radius: 5px;
+  margin: 0px 10px 0px 0px;
+  background:@light-gray;
+  color:@colour3;
+  text-align: center;
+  &:hover {
+  box-shadow: 2px 2px @colour;
+}
+}
+.top-heading {
+  border-bottom: 1px solid @colour;
+  padding: 10px 0px 8px 20px;
+  font-size: smaller;
+  h3 {
+    text-align: left;
+    font-family: @font;
+  }
+}
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+.box-shadow(@x: 0, @y: 0, @blur: 1px, @color: @logocolor) {
+  -webkit-box-shadow: @arguments;
+     -moz-box-shadow: @arguments;
+          box-shadow: @arguments;
+}
+.width(@width,@hight){
+  width: @width;
+  height: @hight;
+}
+.curser{
+  cursor: pointer;
+}
+.tooltip{
+      visibility: hidden;
+      .width(100px,20px);
+      background-color: @logocolor;
+      color: @colour1;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+}
