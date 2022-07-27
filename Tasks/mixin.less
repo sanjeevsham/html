@@ -28,18 +28,23 @@
   }
 }
 .border-radius(@radius) {
-  -webkit-border-radius: @radius;
-     -moz-border-radius: @radius;
-          border-radius: @radius;
+  border-radius: @radius;
 }
 .box-shadow(@x: 0, @y: 0, @blur: 1px, @color: @logocolor) {
-  -webkit-box-shadow: @arguments;
-     -moz-box-shadow: @arguments;
-          box-shadow: @arguments;
+  box-shadow: @arguments;
 }
 .width(@width,@hight){
   width: @width;
   height: @hight;
+}
+.padding1(@top,@right,@bottom,@left){
+  padding-top: @top;
+  padding-right: @right;
+  padding-bottom: @bottom;
+  padding-left: @left;
+}
+.padding(@all){
+  padding: @all;
 }
 .curser{
   cursor: pointer;
