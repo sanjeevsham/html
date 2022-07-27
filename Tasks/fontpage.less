@@ -3,7 +3,7 @@
 .main-container {
   display: grid;
   .width(100%,0%);
-  grid-template-columns: 0.2fr 2fr 2fr 3fr;
+  .grid(0.2fr,2fr,2fr,3fr);
   background: @colour1;
   border: 1px solid @card2;
  .border-radius(5px);
@@ -57,11 +57,19 @@
   background: rgb(255, 72, 0);
 }
   }
-  .image img {
-   .border-radius(50%);
-    .curser();
-    .width(30px,30px);
-    .padding(27px);
+  .image {
+    img {
+      .border-radius(50%);
+      .curser();
+      .width(30px,30px);
+      .padding(27px);
+      margin: auto;
+      display: block;
+      opacity:0.5;
+      &:hover{
+        opacity: 2;
+      }
+    }
   }
   .dot4 {
     .width(8px,8px);
@@ -69,14 +77,15 @@
     .border-radius(50%);
     display: inline-block;
     position: relative;
-    bottom: 64px;
-    left: 45px;
+    bottom: 60px;
+    left: 48px;
     border: 2px solid @colour1;
   }
   .power {
     font-size: 30px;
     text-align: center;
     color: rgba(0, 0, 0, 0.39);
+    margin-top: 20px;
     .curser();
     &:hover {
       color: @black;
@@ -114,15 +123,17 @@
 
         span {
           color:@colour3;
-          .padding1(0px,0px,0px,15px);
+          .padding1(0px,0px,0px,12px);
         }
       }
     }
   }
-  .graph img {
-    .width(95%,50%);
-    .padding(10px);
-    margin-top: 14px;
+  .graph{
+    img {
+     .width(95%,50%);
+     .padding(10px);
+     margin-top: 14px;
+   }
   }
   .heading{
     .heading();
@@ -150,9 +161,11 @@
       .hand {
         color: @green;
       }
-      .laptop,
-      .book {
+      .laptop{
        color: @orange;
+      }
+      .book{
+        .laptop();
       }
       .building {
         color: @colour2;
@@ -163,12 +176,17 @@
       .columns {
         color:@pink;
       }
-      .credit,.tags {
+      .credit {
         color: @skyblue;
       }
-      .money-bill-alt,
-      .money-bill {
+      .tags{
+        .credit();
+      }
+      .money-bill-alt {
         color: @red;
+      }
+      .money-bill{
+        .money-bill-alt();
       }
       .amazon {
         color:@blue;
@@ -186,16 +204,17 @@
     .top-heading();
   }
   .wallet {
-    .padding(20px);
+    .padding1(20px,15px,20px,15px);
     p {
       color:@colour3;
     }
     .price1 {
-      display: flex;
-      .wallet1 em {
-        font-size: 30px;
-        color:@blue;
-        .padding(4px);
+      .wallet1 {
+        float: left;
+        em {
+          font-size: 30px;
+          color:@blue;
+        }
       }
       .price2 {
         color: rgb(4, 4, 112);
@@ -205,10 +224,10 @@
       }
       .options {
         font-size: 27px;
-        .padding1(0px,0px,0px,8px);
         border: none;
         color:@colour3;
         background-color: @opt-colour;
+        float: right;
         .curser();
         outline: none;
         .dropdown {
@@ -218,7 +237,7 @@
     }
   }
   .activity {
-    .padding1(20px,20px,3px,20px);
+    .padding1(40px,15px,10px,15px);
     h3 {
       font-weight: bold;
       font-family: @font;
@@ -241,12 +260,12 @@
       background: @colour1;
       .col1 {
         display: grid;
-        grid-template-columns: 66% 25%;
+       .grid(70%,25%,0%,0%);
         .padding(2px);
         .width(100%,70px);
         .logo-img {
           display: grid;
-          grid-template-columns: 50px 80px;
+          .grid(50px,80px,0px,0px);
           .padding(15px);
         }
         .btc {
@@ -255,8 +274,8 @@
       }
       .col2 {
         display: grid;
-        grid-template-columns: 69% 70px;
-        .padding1(0px,0px,13px,20px);
+        .grid(70%,24%,0%,0%);
+        .padding1(0px,0px,15px,20px);
         .clock{
           em{
             .padding1(5px,5px,0px,0px);
@@ -267,9 +286,9 @@
           .width(70px,30px);
           border: 1px solid @black;
           border-radius: 10px;
-          .padding1(0px,6px,0px,0px);
           background: @black;
           color: @colour1;
+          margin-top: 15px;
           .curser();
           &:hover {
             background: @colour1;
@@ -291,7 +310,7 @@
       background: @colour1;
       .history1 {
         display: grid;
-        grid-template-columns: 91% 9%;
+        .grid(91%,9%,0%,0%);
         .history-col {
           .padding1(20px,10px,10px,10px);
           .btc1 {
@@ -315,8 +334,10 @@
           }
         }
       }
-      .graph2 img {
-        .width(100%,30%)
+      .graph2{
+         img {
+         .width(100%,30%)
+       }
       }
     }
   }
@@ -325,13 +346,14 @@
   border-right: 1px solid @colour;
   .nav {
     display: grid;
-    grid-template-columns: 50px 50px 260px 95px 46px;
+    .nav-grid(10%,14%,46%,20%,10%);
     border-bottom: 1px solid @colour;
-    .padding1(14px,20px,9px,20px);
+    .padding(12px);
     align-items: center;
     .bell1{
       .gear();
       .padding1(10px,10px,0px,10px);
+       margin: 0px 30px 0px 0px;
     }
     .dot3 {
       .width(7px,7px);
@@ -358,7 +380,7 @@
        input {
         outline: none;
         border: none;
-        font-size: 16px;
+        font-size: 73%;
         .padding1(0px,0px,0px,10px);
         font-family: @font;
       }
@@ -394,9 +416,10 @@
   .container5 {
     .padding(20px);
     .col3 {
-      display: grid;
-      grid-template-columns: 60% 40%;
-      padding: 20px;
+      .padding(20px);
+      .bit-co{
+        float: left;
+      }
       .image-bit {
         display: flex;
         img {
@@ -427,7 +450,7 @@
       }
       .currency {
         .padding1(8px,0px,0px,0px);
-        text-align: end;
+        float: right;
         button {
           background: @black;
           color: @colour1;
@@ -445,13 +468,11 @@
     .heading2 {
       font-size: 24px;
       font-family: @font;
-      .padding1(0px,0px,0px,20px);
       font-weight: 600;
     }
     .cards {
       display: grid;
-      grid-template-columns: 35% 35% 34%;
-      .padding1(0px,20px,20px,20px);
+      .grid(35%,35%,34%,0%);
       font-family: @font;
       font-size: 10px;
       .card1 {
@@ -464,7 +485,7 @@
         .width(95%,92%);
         img {
           .width(86%,0%);
-          padding: 10px;
+          .padding(10px);
         }
         .card-row1 {
           text-align: center;
@@ -502,19 +523,12 @@
         }
       }
       .card2 {
-        border: none;
-        .border-radius(5px);
-        margin: 5px;
+        .card1();
         background:@card2;
-        justify-content: center;
-        .width(95%,92%);
-         img {
-          .width(86%,0%);
-        .padding(10px);
-        }
-        .card-row1 {
-          text-align: center;
-          .padding1(20px,20px,0px,20px);
+        color: @black;
+        img {
+          .width(80%,0%);
+          .padding1(10px,10px,10px,15px);
         }
         .spending1 {
           color: @colour3;
