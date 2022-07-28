@@ -93,8 +93,7 @@
   }
 }
 .container2 {
-  border-right: 1px solid @colour3;
-  .width(100%,100%);
+  border-right: 1px solid @colour;
   .top-heading{
     .top-heading();
   }
@@ -132,7 +131,7 @@
     img {
      .width(95%,50%);
      .padding(10px);
-     margin-top: 14px;
+     .margin1(14px,0px,0px,0px)
    }
   }
   .heading{
@@ -146,7 +145,7 @@
       border: 1px solid @colour;
       .border-radius(5px);
       .padding(10px);
-      margin: 5px;
+      .margin(5px);
       font-size: 30px;
       text-align: center;
       .curser();
@@ -247,6 +246,7 @@
       justify-content: space-around;
       .options2 {
         .width(94px,30px);
+        .curser();
         border: 1px solid @colour;
         .border-radius(10px);
         .padding(5px);
@@ -255,7 +255,7 @@
     }
     .card {
       border: 1px solid @colour;
-      margin-top: 20px;
+      .margin1(20px,0px,0px,0px);
       .border-radius(5px);
       background: @colour1;
       .col1 {
@@ -346,14 +346,14 @@
   border-right: 1px solid @colour;
   .nav {
     display: grid;
-    .nav-grid(10%,14%,46%,20%,10%);
+    .nav-grid(10%,14%,46%,15%,15%);
     border-bottom: 1px solid @colour;
     .padding(12px);
     align-items: center;
     .bell1{
       .gear();
       .padding1(10px,10px,0px,10px);
-       margin: 0px 30px 0px 0px;
+      .margin1(0px,30px,0px,0px)
     }
     .dot3 {
       .width(7px,7px);
@@ -472,13 +472,13 @@
     }
     .cards {
       display: grid;
-      .grid(35%,35%,34%,0%);
+      .grid(35%,35%,155px,0%);
       font-family: @font;
       font-size: 10px;
       .card1 {
         border: none;
         .border-radius(5px);
-        margin: 5px;
+        .margin(5px);
         background:@colour2;
         justify-content: center;
         color: @colour1;
@@ -539,7 +539,8 @@
         border: none;
         .border-radius(5px);
         display: flex;
-        margin: 7px 16px 15px 5px;
+        .margin1(7px,10px,10px,5px);
+        height: 28%;
         background:@card2;
         p {
           .padding1(13px,2px,0px,0px);
@@ -581,3 +582,4 @@
   }
 }
 }
+

@@ -9,8 +9,9 @@
   font-size: 20px;
   border: none;
   padding: 9px;
+  width: 25px;
   .border-radius(5px);
-  margin: 0px 10px 0px 0px;
+  .margin1(0px,10px,0px,0px);
   background:@light-gray;
   color:@colour3;
   text-align: center;
@@ -20,8 +21,8 @@
 }
 .top-heading {
   border-bottom: 1px solid @colour;
-  .padding1(10px,0px,8px,20px);
-  font-size: smaller;
+  .padding1(10px,0px,5px,20px);
+  font-size: 14px;
   h3 {
     text-align: left;
     font-family: @font;
@@ -43,14 +44,23 @@
   width: @width;
   height: @hight;
 }
+.padding(@all){
+  padding: @all;
+}
 .padding1(@top,@right,@bottom,@left){
   padding-top: @top;
   padding-right: @right;
   padding-bottom: @bottom;
   padding-left: @left;
 }
-.padding(@all){
-  padding: @all;
+.margin(@all){
+  margin: @all;
+}
+.margin1(@top,@right,@bottom,@left){
+  margin-top: @top;
+  margin-right: @right;
+  margin-bottom: @bottom;
+  margin-left: @left;
 }
 .curser{
   cursor: pointer;
